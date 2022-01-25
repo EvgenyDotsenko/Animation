@@ -1,3 +1,23 @@
+main {
+  margin: 150px auto;
+  width: 100mm;
+  height: 100mm;
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+}
 .content_square {
   width: 100px;
   height: 100px;
@@ -16,5 +36,190 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button1 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ff00dd;
+  border: none;
+  border-radius: 7px;
+}
+.button1:hover {
+  transform: translateY(+3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.button2 {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(200, 3, 240);
+  background-color: #00f7ff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.button2:hover {
+  animation-name: glowing2;
+  animation-duration: 1s;
+}
+
+@keyframes glowing2 {
+  0% {
+    background-color: rgb(234, 2, 255);
+    box-shadow: 0 0 3px rgb(234, 2, 255);
+  }
+  50% {
+    background-color: rgb(234, 2, 255);
+    color: rgb(3, 232, 240);
+    font-size: xx-large;
+    font-weight: bold;
+
+    box-shadow: 0 0 3px rgb(234, 2, 255);
+  }
+  100% {
+    background-color: #00f7ff;
+    box-shadow: 0 0 3px #00f7ff;
+  }
+}
+.button3 {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(4, 250, 66);
+  background-color: #0004ff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.button3:hover {
+  animation-name: glowing3;
+  animation-duration: 1s;
+}
+
+@keyframes glowing3 {
+  0% {
+    background-color: rgb(2, 255, 86);
+    box-shadow: 0 0 3px rgb(2, 255, 86);
+  }
+  50% {
+    background-color: rgb(4, 250, 66);
+    color: #0004ff;
+    font-size: xx-large;
+    font-weight: bold;
+
+    box-shadow: 0 0 3px rgb(4, 250, 66);
+  }
+  100% {
+    background-color: #0004ff;
+    box-shadow: 0 0 3px #0004ff;
+  }
+}
+.button4 {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(255, 115, 0);
+  background-color: #fffb00;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.button4:hover {
+  animation-name: glowing4;
+  animation-duration: 1s;
+}
+
+@keyframes glowing4 {
+  0% {
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0 0 3px rgb(255, 115, 0);
+  }
+  50% {
+    background-color: rgb(255, 115, 0);
+    color: #fffb00;
+    font-size: xx-large;
+    font-weight: bold;
+    box-shadow: 0 0 3px rgb(255, 115, 0);
+  }
+  100% {
+    background-color: #fffb00;
+    box-shadow: 0 0 3px #fffb00;
+  }
+}
+
+.button5 {
+  padding: 15px 25px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(253, 0, 253);
+  background-color: #7bff00;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.button5:hover {
+  animation-name: glowing5;
+  animation-duration: 1s;
+}
+
+@keyframes glowing5 {
+  0% {
+    background-color: rgb(253, 0, 253);
+    box-shadow: 0 0 3px rgb(253, 0, 253);
+  }
+  50% {
+    background-color: rgb(253, 0, 253);
+    color: #7bff00;
+    font-size: xx-large;
+    font-weight: bold;
+    box-shadow: 0 0 3px rgb(253, 0, 253);
+  }
+  100% {
+    background-color: #7bff00;
+    box-shadow: 0 0 3px #7bff00;
   }
 }
